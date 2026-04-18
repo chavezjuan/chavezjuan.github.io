@@ -1,0 +1,135 @@
+/* --- Global Reset & Body --- */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Layout Container --- */
+
+/* Centers the content and gives it a max width */
+.container {
+    max-width: 700px; /* Readable width for a blog */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 20px; /* Adds space on the sides */
+}
+
+/* --- Header & Navigation --- */
+
+header {
+    padding: 25px 0;
+    border-bottom: 1px solid #000000; /* Simple line separator */
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Puts menu items in a row */
+    justify-content: center; /* Centers the menu */
+    flex-wrap: wrap; /* Allows menu to wrap on small screens */
+}
+
+nav li {
+    margin: 0 15px; /* Adds space between menu items */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Simple hover effect */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Main Content & Articles --- */
+
+article {
+    margin-bottom: 40px; /* Space between blog posts */
+}
+
+article h2 {
+    margin-bottom: 5px;
+    font-size: 2em;
+    line-height: 1.2; /* Tighter heading line height */
+}
+
+article .post-date {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #333; /* Slightly off-black for subtlety */
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.h-resume {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+}
+
+/* --- Footer --- */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid #000000; /* Simple line separator */
+    font-size: 0.9em;
+}
+
+
+/*
+=========================================
+ RESPONSIVE DESIGN (Mobile First)
+=========================================
+*/
+
+/* Media query for screens 720px wide or smaller */
+@media (max-width: 720px) {
+
+    body {
+        font-size: 16px; /* Ensure readable base font size on mobile */
+    }
+
+    .container {
+        padding: 0 15px; /* Reduce side padding */
+    }
+
+    header {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    nav li {
+        margin: 5px 10px; /* Add vertical margin and reduce horizontal */
+    }
+
+    article h2 {
+        font-size: 1.8em; /* Slightly smaller headings on mobile */
+    }
+}

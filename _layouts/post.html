@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <a href="/articles.html">← Voltar para Artigos</a>
-    <article>
-        <h1>{{ page.title }}</h1>
-        <hr>
-        {{ content }} 
-    </article>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="h-feed" itemscope itemtype="https://schema.org/Blog">
+            <article>
+                <a href="/articles.html">← Voltar para Artigos</a>
+                <h1>{{ page.title }}</h1>
+                <hr>
+                {{ content }}
+            </article>
+        </main>
+
+
+        <footer itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <p>&copy; 2025 <span itemprop="name">Juan Chavez</span></p>
+        </footer>
+
+
+    </div>
+
+
 </body>
+
 </html>

@@ -93,6 +93,47 @@ article p {
     width: 250px;
 }
 
+blockquote {
+    border-left: 4px solid #007BFF; /* Linha lateral colorida (ajuste a cor) */
+    margin: 1.5em 0; /* Espaço em cima e embaixo */
+    padding: 0.5em 1em; /* Espaçamento interno */
+    color: #555; /* Cor da fonte um pouco mais clara */
+    font-style: italic; /* Letra em itálico */
+    background-color: #f8f9fa; /* Fundo cinza bem suave */
+    border-radius: 0 4px 4px 0; /* Bordas levemente arredondadas na direita */
+}
+
+/* Garante que o parágrafo dentro da citação não tenha margem extra */
+blockquote p {
+    margin: 0;
+}
+
+/* Estilo para código no meio do texto (ex: `código`) */
+code {
+    background-color: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace; /* Fonte de máquina de escrever */
+    font-size: 0.9em;
+    color: #d63384; /* Cor de destaque (opcional) */
+}
+
+/* Estilo para blocos de código grandes (ex: ```código```) */
+pre {
+    background-color: #2d2d2d; /* Fundo escuro padrão de código */
+    color: #f8f8f2; /* Letra clara */
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto; /* Adiciona barra de rolagem se a linha de código for muito longa */
+}
+
+/* Tira o fundo do <code> quando ele estiver dentro de um bloco grande <pre> */
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+}
+
 /* --- Footer --- */
 
 footer {

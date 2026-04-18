@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
@@ -26,19 +30,26 @@
 
         <main class="h-feed" itemscope itemtype="https://schema.org/Blog">
             <ul>
-                {% for post in site.posts %}
-                <li>
-                    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-                    <a href="{{ post.url }}" class="h-entry">{{ post.title }}</a>
+                <li style="margin-bottom: 40px;">
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+
+                    <div class="resumo-artigo">
+                        -->
+                        {{ post.excerpt }}
+                    </div>
+
+                    <a href="{{ post.url }}">Leia o artigo completo →</a>
                 </li>
                 {% endfor %}
             </ul>
-        </main>          
+        </main>
 
         <footer itemprop="author" itemscope itemtype="https://schema.org/Person">
             <p>&copy; 2025 <span itemprop="name">Juan Chavez</span></p>
         </footer>
 
-    </div> 
+    </div>
 </body>
+
 </html>

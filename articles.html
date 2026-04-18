@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +32,13 @@
 
         <main class="h-feed" itemscope itemtype="https://schema.org/Blog">
             <ul>
+                {% for post in site.posts %}
                 <li style="margin-bottom: 40px;">
                     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                     <span>{{ post.date | date: "%d/%m/%Y" }}</span>
 
                     <div class="resumo-artigo">
-                        -->
+                        ' SOLTO QUE ESTAVA AQUI -->
                         {{ post.excerpt }}
                     </div>
 

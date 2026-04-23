@@ -61,6 +61,38 @@ Para pesquisar:
 - Artigo da Antropic sobre Tool Search (Effective Context Engineering)
 - TOON
 
+### Agents in the Shadows: O Novo Risco da IA | Ben-Hur Ott | Snyk
+O MCP pode ser local ou remoto, via API.
+Quando um agente de IA faz um request e response para um MCP, ele não diferencia o que é conteúdo ou instrução.
+A skill pode fazer uma referência remota também.
+Ou seja, coisas podem ser executadas sem o nosso controle
+
+Cuidado:
+1) Lethal Trifecta
+Ver simon willison artigo.
+Acesso a conteúdo privado, habilidade para comunicação externa e exposição em conteúdo não confiável.
+
+2) MCP Toxic FLows
+Ver https://invariantlabs.ai/blog/toxic-flow-analysis.
+Fluxos modificados no agente pelo hacker, com o objetivo de extrair informações.
+Cuidado ao dar muitas permissões para o MCP. 
+
+3) Toxic Skills
+https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/
+"confiança de contexto". ou seja, é levar o llm "na conversa", fazendo ele acreditar que tal comando faz parte do contexto.
+Um código malicioso pode te atacar internamente da sua estrutura.
+
+4) Code Generation
+O código gerado ainda é muito inseguro.
+Ver artigos "You still have to study".
+
+Para pesquisar:
+- http://agentskills.io/home
+- Claw Hub
+- MCP STDIO
+- Prompt injection
+
+
 
 
 

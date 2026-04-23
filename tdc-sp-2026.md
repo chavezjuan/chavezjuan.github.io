@@ -31,4 +31,37 @@ Para pesquisar:
 - Devin
 - OpenRouter
 
+### Eficiência de Tokens: o caminho para escalar LLMs | Gabriel D'Amore Marciano | TOTVS
+
+Eficiência e Eficaz. Ser eficaz é atingir o objetivo.
+Janela de Contexto: o número max de tokens que o modelo pode ver de uma vez só. como se fosse a memória da LLM. input dos usuários, raga, histórico, rag e etc.
+
+Como reduzir o custo dos tokens
+1) Prompts repetidos no contexto <br>
+Uma solução é o Prompt Caching. Essa solução geralmente já vem nos providers. OpenAI não cobra, já a Anthropic cobra.
+
+2) Tokens ocupados pelas tools <br>
+A solução é a Tool Search Tool. Ele seria uma tool que busca as outras tool. Apesar se ter uma requisição a mais, aumentando um pouco a latência, vale a pena a estratégia. O aumento do uso das tools aumentaria sob demanda.
+
+3) Entradas com JSON = +Tokens <br>
+Serializador chamado TOON.
+O JSON gasta mais tokens.
+
+4) Saídas não estruturadas = +Tokens <br>
+A saída é mais cara que a entrada. Geralmente, o retorno para o backend precisa ser estruturado, evitando texto adicionais e estruturas não relevantes.
+A solução é usar uma structured output.
+
+Pílulas de eficiência:
+- LLMLingua (Microsoft): Pega um texto (não estruturado) e reduz sem perder a semântica. Mantém a eficácia. Pode ser ideal para busca de base de conheciment.
+- Caveman: força aos coding agents que força o modelo a responder de forma extremamente concisa.
+- RTK: filtra e comprime saídas de comandos antes que eles chegem ao contexto da LLM.
+
+Para pesquisar:
+- Spring AI
+- Artigo da Antropic sobre Tool Search (Effective Context Engineering)
+- TOON
+
+
+
+
 

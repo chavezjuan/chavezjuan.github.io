@@ -92,6 +92,41 @@ Para pesquisar:
 - MCP STDIO
 - Prompt injection
 
+### Dev Experience com IA: um mergulho na transformação da engenharia no Itaú | Gabriel Pegorelli & Mariana Elisa Moisés
+Vibe Coding: 
+Vibe Engineering: inclusão de IA no SDLC junto com as práticas de engenharia.
+
+Para pesquisar:
+- Software 2.0
+
+### Desenvolvendo na Velocidade da Luz: Dominando Claude Code e Agentes para Acelerar sua Produtividade | Marcel Cordeiro | Software Engineer, Ledn
+Lacunas de produtividade com IA: Poluição de contexto
+Degradaçao de desempenho conforme mantemos longas janelas de contexto nas conversas.
+
+Subagents: equipe virtual de especialistas. trabalham na mesma sessão de execução do Claude, criando threads.
+Com IA, estamos levando a engenharia mais para a esquerda, mais próxima do produto.
+Vantagens do subagents: isolamento de contexto, especialização, paralelização e reutilização.
+Estrutura do subagent: metadados, modelo, ferramentas, prompt do sistema.
+Agents Teams: podem ser executar eles em instâncias diferentes do Claude, tendo a comunicação entre eles.
+
+Boas práticas do subegents:
+- Começar simples, testar um subagent por vez
+- System prompts com exemplos específicos
+- Validar diferentes modelos por tarefas
+- Version control dos agentes
+- Medir ROI desde o início
+- Estratégias de Caching
+- Budget alerts configurados
+
+Para pesquisar:
+- Subagents
+- Agents Teams (Antropic)
+- Spec Driven Development
+
+
+
+
+
 
 
 
